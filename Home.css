@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #202a44;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav>ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav>ul>li {
+    margin: 3px ;
+}
+
+nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul>li.active a {
+    background-color: #F8C96A;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+}
+.settings-support {
+    margin-top: auto;
+    text-align: left;
+    margin-left: -1px;
+}
+.user-info>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+.settings-support a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: left; 
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.new-user-btn {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-table {
+    margin-top: 20px;
+    border:1px solid black;
+    border-radius:10px;
+    padding: 8px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-filter input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.sort-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.filters select {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+img{
+    height:20px;
+    width:25px;
+    border-radius: 50px;
+}
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table-head{
+    background-color: whitesmoke;
+}
+.dot{
+    height: 10px;
+    width:10px;
+    background-color: green;
+    border-radius: 50%;
+    display:inline-block;
+}
+.btn1{
+    border-radius: 20px;
+}
+.btn2{
+    border-radius: 20px;
+    color:blue;
+    border:1px solid blue;
+}
+.btn3{
+    border-radius: 20px;
+    color:navy;
+    border:1px solid navy;
+}
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.status.active {
+    background-color: #DFF2BF;
+    color: #4F8A10;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pages span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pages span.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
